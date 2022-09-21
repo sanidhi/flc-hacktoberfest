@@ -17,7 +17,7 @@ export default function CardComp() {
                 <h1 className="font-mono text-center text-2xl font-bold my-3">{person.name}</h1>
                 <div class="flex flex-row gap-2 items-center place-content-center">
                   <AiFillGithub className="w-8 h-8"/>
-                  <a className="font-mono text-center text-md">{person.username}</a>
+                  <a className="font-mono text-center text-md">@{person.username}</a>
                 </div>
                 <a className="font-mono text-center text-md">Branch: {person.branch}</a>
                 <a className="font-mono text-center text-md">Year: {person.year}</a>
@@ -29,7 +29,7 @@ export default function CardComp() {
         ))}
     </div>
     <div className="bg-yellow-500 h-20 flex items-center place-content-center">
-      <a className="text-red-800 hover:text-blue-900 ease-in transition-colors font-mono font-bold text-xl md:text-2xl lg:text-4xl">Total Members So Far: {Data.length}</a>
+      <a className="text-red-800 hover:text-blue-900 ease-in transition-colors font-mono font-bold text-xl md:text-2xl lg:text-4xl">Total Members: {Data.length}</a>
     </div>
     </>
   )
