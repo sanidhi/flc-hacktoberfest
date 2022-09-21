@@ -6,13 +6,13 @@ import Image from 'next/image.js';
 export default function CardComp() {
   return (
     <>
-    <a>Total members so far: {Data.length}</a>
+    <a>Total members: {Data.length}</a>
     <div>
         {Data.map((person, index) => (
             <div key={index}>
                 <Image src={`https://github.com/${person.username}.png`} width={100} height={100} alt="profile picture" />
                 <h1>{person.name}</h1>
-                <AiFillGithub/><a>{person.username}</a>
+                <AiFillGithub/><a>@{person.username}</a>
                 <a>Branch: {person.branch}</a>
                 <a>Year: {person.year}</a>
                 <Link href={`https://github.com/${person.username}`}>
