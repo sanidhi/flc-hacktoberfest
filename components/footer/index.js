@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <div>
+    <div id='contact'>
         <div>
             <Image src="/flc_logo_crop.png" width={100} height={100} />
             <a>Finite Loop Club</a>

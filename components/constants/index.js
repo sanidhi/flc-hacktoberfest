@@ -3,7 +3,7 @@ import {AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin, AiOutlineMail,
 export const navLinks =[
     {name:"Home",link:"/"},
     {name:"About",link:"/about"},
-    {name:"Contact",link:"/"},
+    {name:"Contact",link:"#contact"},
 ];
 
 export const social =[
