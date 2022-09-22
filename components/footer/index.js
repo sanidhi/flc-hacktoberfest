@@ -4,19 +4,28 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <div id='contact' className="flex flex-col items-center justify-center bg-zinc-700 py-5">
-        <div className="relative w-[100px] h-[100px]">
-            <Image src="/flc_logo_crop.png" layout="fill" objectFit='cover' alt="club-logo"/>
+    <footer className="bg-zinc-900" id='contact'>
+    <div className="max-w-5xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+        <div className="flex justify-center items-center">
+            <div className="relative w-[100px] h-[100px]">
+                <Image src="/flc_logo_crop.png" layout="fill" objectFit='cover' alt="club-logo"/>
+            </div>
+            <a className="ml-3 text-lg md:text-xl cursor-pointer flex items-center text-white">Finite Loop Club</a>
         </div>
-        <a className="text-xl lg:text-2xl font-mono font-bold text-yellow-500">Finite Loop Club</a>
-        <p className="text-md lg:text-lg font-mono font-bold text-yellow-500 text-center">
+
+        <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-white">
         NMAM Institute of Technology, Nitte, SH1, Karkala, Karnataka, KARKALA, NMAMIT 574110, IN
         </p>
-        <ul className="flex flex-row gap-8 py-5">
+
+        <ul className="flex justify-center mt-12 gap-6 md:gap-8">
         {social.map((link, index)=>(
         <li key={index}>
             <Link href={link.link}>
-                <a rel="noopener noreferrer "target="_blank" className="text-blue-400 text-3xl lg:text-5xl">
+                <a
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-white transition hover:text-gray-300 text-3xl"
+                >
                 {link.icon}
                 </a>
             </Link>
@@ -24,5 +33,6 @@ export default function Footer() {
         ))}
         </ul>
     </div>
+    </footer>
   )
 }
