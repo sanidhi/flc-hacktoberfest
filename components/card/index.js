@@ -29,8 +29,8 @@ export default function CardComp() {
                 <Link href={`https://github.com/${person.username}`}>
                   {/* <a className="bg-black w-1/2 h-10 rounded-lg mx-auto my-4 text-white flex items-center place-content-center border-4 border-gray-600 hover:border-yellow-300 hover:-rotate-3 transition-all ease-in">Visit Profile</a> */}
                   <div className='relative group'>
-                  <div className='absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300'></div>
-                  <button className='relative px-7 py-3 bg-black rounded-lg leading-none group-hover:text-gray-200 transition duration-300'>Visit Profile</button>
+                  <div className='absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-red-400 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-300 animate-text'></div>
+                  <button className='relative px-7 py-3 bg-gray-900 hover:bg-black rounded-lg leading-none group-hover:text-gray-200 transition duration-300'>Visit Profile</button>
                   </div>
                 </Link>
                 </div>
@@ -39,7 +39,7 @@ export default function CardComp() {
         ))}
     </div>
     <div className="bg-gray-600 h-20 flex items-center place-content-center">
-      <a className="gradient hover:text-blue-900 ease-in transition-colors  font-bold text-xl md:text-2xl lg:text-4xl">Total Members: {Data.length}</a>
+      <a className="gradient font-bold text-xl md:text-2xl lg:text-4xl">Total Members: {Data.length}</a>
     </div>
     </>
   )
