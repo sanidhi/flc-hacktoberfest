@@ -1,18 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
-import {SiNextdotjs, SiTailwindcss} from "react-icons/si"
 
 export default function About() {
   return (
-      <section className="pt-28 bg-black">
+      <section className="pt-28 backg">
         <div className="mx-auto px-4 py-16 max-w-screen-xl sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-lg lg:order-last md:mx-auto">
-              <Image src='/hacktoberfest.png' width={360} height={450} className="absolute inset-0 w-full h-full" />
+              <Image alt="event-poster" src='/hacktoberfest.png' width={360} height={450} className="absolute inset-0 w-full h-full" />
             </div>
 
             <div className="lg:text-xl">
-              <p className="lg:mt-4 text-white">
+              <p className="text-white">
               Finite Loop Club, NMAMIT is organising a session on Kickstart open source journey with Hacktoberfest to promote open source contributions and introduce everyone to Hacktoberfest-2022. 
               <span className="font-bold"> OPEN TO ALL BRANCHES</span> of 3rd and 4th year!
               </p>

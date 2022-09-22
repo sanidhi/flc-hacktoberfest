@@ -5,13 +5,13 @@ import Image from 'next/image.js';
 
 export default function CardComp() {
   return (
-    <>
-    <div className='pt-20 bg-black'>
+    <div className="backg">
+    <div className='pt-20'>
     <h3 className="text-center bg-black gradient pt-10 pb-5 text-3xl lg:text-5xl font-bold">MEMBERS</h3>
     </div>
-    <div className="flex flex-wrap w-screen min-h-[900px] align-center justify-center bg-black pb-10 text-white">
+    <div className="flex flex-wrap w-screen min-h-[900px] align-center justify-center pb-10 text-white">
         {Data.map((person, index) => (
-            <div key={index} className="w-[250px] min-h-[350px] lg:min-w-[300px] lg:min-h-[400px] m-5 rounded-xl hover:rotate-2 transition duration-300 bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg">
+            <div key={index} className="w-[250px] min-h-[350px] lg:min-w-[300px] lg:min-h-[400px] m-5 rounded-xl hover:rotate-2 transition duration-300 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg fade-in">
                 <div class="w-full h-48 lg:h-72 relative">
                   <Image src={`https://github.com/${person.username}.png`} layout="fill" objectFit="cover" alt="profile picture" className="rounded-t-xl"/>
                 </div>
@@ -41,6 +41,6 @@ export default function CardComp() {
     <div className="bg-gray-600 h-20 flex items-center place-content-center">
       <a className="gradient font-bold text-xl md:text-2xl lg:text-4xl">Total Members: {Data.length}</a>
     </div>
-    </>
+    </div>
   )
 }
