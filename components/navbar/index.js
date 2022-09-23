@@ -8,7 +8,7 @@ export default function Navbar() {
   const [open,setOpen]=useState(false);
   return (
   <div className='shadow-md w-full fixed top-0 left-0 z-[1] bg-white backdrop-filter backdrop-blur-lg bg-opacity-30'>
-  <div className='md:flex items-center justify-between py-4 md:px-10 px-7'>
+  <div className='flex md:flex-row items-center justify-between py-4 md:px-10 px-7'>
   <div className='font-bold text-xl md:text-2xl cursor-pointer flex items-center
   text-white'>
           <div className='relative w-[50px] min-h-[50px] mr-2 pt-2'>
@@ -17,7 +17,7 @@ export default function Navbar() {
     <Link href="/"><a>Finite Loop Club</a></Link>
   </div>
 
-  <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden text-white'>
+  <div onClick={()=>setOpen(!open)} className='text-3xl cursor-pointer md:hidden text-white'>
     {open ? <AiOutlineClose/>:<AiOutlineMenu/>}
   </div>
 
