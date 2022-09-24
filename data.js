@@ -1,7 +1,7 @@
 export const Data =[
     {
-        name: "Nagaraj Pandith",
-        username: "nagarajpandith",
+        name: "sannidhi shetty",
+        username: "sannidhi",
         branch: "CSE",
         year: "3rd",
     },
