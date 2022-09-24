@@ -4,7 +4,7 @@ export const Data =[
         username: "sannidhi",
         branch: "CSE",
         year: "3rd",
-        "good person"
+       
     },
     
 ];
